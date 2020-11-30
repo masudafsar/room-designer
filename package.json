@@ -1,0 +1,15 @@
+{
+  "name": "room-designer",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Masud Afsar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:masud-resume-490180105874305197578345/web/room-designer.git"
+  },
+  "description": ""
+}
