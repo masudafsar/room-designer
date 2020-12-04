@@ -7,6 +7,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const minifyCss = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
 const dependents = require('gulp-dependents');
+const ejs = require('gulp-ejs');
+const rename = require('gulp-rename')
 
 const src_folder = './src/';
 const src_assets_folder = src_folder + 'assets/';
@@ -21,11 +23,21 @@ gulp.task('clear', () => {
 
 gulp.task('html', () => {
     return gulp.src([
-        src_folder + '**/*.html'
+        src_folder + '**/*.html',
     ], {
         base: src_folder,
         since: gulp.lastRun('html')
     })
+        .pipe(gulp.dest(dist_folder))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('ejs', () => {
+    return gulp.src([
+        src_folder + '*.ejs',
+    ])
+        .pipe(ejs())
+        .pipe(rename({ extname: '.html' }))
         .pipe(gulp.dest(dist_folder))
         .pipe(browserSync.stream());
 });
@@ -46,9 +58,9 @@ gulp.task('sass', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'sass'));
+gulp.task('build', gulp.series('clear', 'html', 'ejs', 'sass'));
 
-gulp.task('dev', gulp.series('html', 'sass'));
+gulp.task('dev', gulp.series('html', 'ejs', 'sass'));
 
 gulp.task('serve', () => {
     return browserSync.init({
