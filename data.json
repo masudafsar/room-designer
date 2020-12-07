@@ -1,5 +1,59 @@
 {
   "site": {
-    "title": "Room Designer - Carpet"
+    "title": "Room Designer - Carpet",
+    "sidebar": {
+      "nav": [
+        {
+          "id": "floorplan",
+          "title": "Edit Floorplan"
+        },
+        {
+          "id": "design",
+          "title": "Design"
+        },
+        {
+          "id": "items",
+          "title": "Add Items"
+        }
+      ]
+    }
+  },
+  "designer": {
+    "floor": {
+      "textures": [
+        {
+          "title": "light fine wood",
+          "url": "rooms/textures/light_fine_wood.jpg",
+          "thumbnail": "rooms/thumbnails/thumbnail_light_fine_wood.jpg",
+          "stretch": false,
+          "scale": 300
+        }
+      ]
+    },
+    "wall": {
+      "textures": [
+        {
+          "title": "marbletiles",
+          "url": "rooms/textures/marbletiles.jpg",
+          "thumbnail": "rooms/thumbnails/thumbnail_marbletiles.jpg",
+          "stretch": false,
+          "scale": 300
+        },
+        {
+          "title": "wallmap yellow",
+          "url": "rooms/textures/wallmap_yellow.png",
+          "thumbnail": "rooms/thumbnails/thumbnail_wallmap_yellow.png",
+          "stretch": true,
+          "scale": 0
+        },
+        {
+          "title": "light brick",
+          "url": "rooms/textures/light_brick.jpg",
+          "thumbnail": "rooms/thumbnails/thumbnail_light_brick.jpg",
+          "stretch": false,
+          "scale": 100
+        }
+      ]
+    }
   }
 }

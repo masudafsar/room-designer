@@ -1,0 +1,11 @@
+<!-- Main Navigation -->
+<ul class="nav nav-sidebar">
+    <% data.site.sidebar.nav.forEach(function (navItem){ %>
+        <li id="<%= navItem.id %>_tab">
+            <a href="#">
+                <%= navItem.title %>
+                <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+            </a>
+        </li>
+    <% }); %>
+</ul>
