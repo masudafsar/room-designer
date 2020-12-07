@@ -9,11 +9,14 @@ const browserSync = require('browser-sync').create();
 const dependents = require('gulp-dependents');
 const ejs = require('gulp-ejs');
 const rename = require('gulp-rename')
+const fs = require('fs');
 
 const src_folder = './src/';
 const src_assets_folder = src_folder + 'assets/';
 const dist_folder = './dist/';
 const dist_assets_folder = dist_folder + 'assets/';
+
+const siteData = JSON.parse(fs.readFileSync('./data.json'));
 
 gulp.task('clear', () => {
     return del([
@@ -48,7 +51,7 @@ gulp.task('ejs', () => {
     return gulp.src([
         src_folder + '*.ejs',
     ])
-        .pipe(ejs())
+        .pipe(ejs({data: siteData}))
         .pipe(rename({extname: '.html'}))
         .pipe(gulp.dest(dist_folder))
         .pipe(browserSync.stream());
@@ -91,6 +94,7 @@ gulp.task('watch', () => {
         src_assets_folder + 'sass/**/*.sass',
         src_assets_folder + 'scss/**/*.scss',
         src_assets_folder + 'js/**/*.js',
+        src_assets_folder + '**/*.json',
     ];
 
     gulp.watch(watch, gulp.series('dev'))
