@@ -23,8 +23,8 @@
       "textures": [
         {
           "title": "light fine wood",
-          "url": "rooms/textures/light_fine_wood.jpg",
-          "thumbnail": "rooms/thumbnails/thumbnail_light_fine_wood.jpg",
+          "url": "/statics/rooms/textures/light_fine_wood.jpg",
+          "thumbnail": "/statics/rooms/thumbnails/thumbnail_light_fine_wood.jpg",
           "stretch": false,
           "scale": 300
         }
@@ -34,22 +34,22 @@
       "textures": [
         {
           "title": "marbletiles",
-          "url": "rooms/textures/marbletiles.jpg",
-          "thumbnail": "rooms/thumbnails/thumbnail_marbletiles.jpg",
+          "url": "/statics/rooms/textures/marbletiles.jpg",
+          "thumbnail": "/statics/rooms/thumbnails/thumbnail_marbletiles.jpg",
           "stretch": false,
           "scale": 300
         },
         {
           "title": "wallmap yellow",
-          "url": "rooms/textures/wallmap_yellow.png",
-          "thumbnail": "rooms/thumbnails/thumbnail_wallmap_yellow.png",
+          "url": "/statics/rooms/textures/wallmap_yellow.png",
+          "thumbnail": "/statics/rooms/thumbnails/thumbnail_wallmap_yellow.png",
           "stretch": true,
           "scale": 0
         },
         {
           "title": "light brick",
-          "url": "rooms/textures/light_brick.jpg",
-          "thumbnail": "rooms/thumbnails/thumbnail_light_brick.jpg",
+          "url": "/statics/rooms/textures/light_brick.jpg",
+          "thumbnail": "/statics/rooms/thumbnails/thumbnail_light_brick.jpg",
           "stretch": false,
           "scale": 100
         }

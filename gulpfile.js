@@ -13,8 +13,10 @@ const fs = require('fs');
 
 const src_folder = './src/';
 const src_assets_folder = src_folder + 'assets/';
+const src_statics_folder = src_folder + 'statics/';
 const dist_folder = './dist/';
 const dist_assets_folder = dist_folder + 'assets/';
+const dist_statics_folder = dist_folder + 'statics/';
 
 const siteData = JSON.parse(fs.readFileSync('./data.json'));
 
@@ -22,6 +24,17 @@ gulp.task('clear', () => {
     return del([
         dist_folder,
     ]);
+});
+
+gulp.task('statics', () => {
+    return gulp.src([
+        src_statics_folder + '**/*.*',
+    ], {
+        base: src_statics_folder,
+        since: gulp.lastRun('statics')
+    })
+        .pipe(gulp.dest(dist_statics_folder))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('html', () => {
@@ -83,9 +96,9 @@ gulp.task('sass', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'fonts', 'js', 'ejs', 'sass'));
+gulp.task('build', gulp.series('clear', 'statics', 'html', 'fonts', 'js', 'ejs', 'sass'));
 
-gulp.task('dev', gulp.series('html', 'fonts', 'js', 'ejs', 'sass'));
+gulp.task('dev', gulp.series('statics', 'html', 'fonts', 'js', 'ejs', 'sass'));
 
 gulp.task('serve', () => {
     return browserSync.init({
