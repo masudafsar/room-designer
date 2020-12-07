@@ -46,6 +46,16 @@ gulp.task('js', () => {
         .pipe(browserSync.stream());
 });
 
+gulp.task('fonts', () => {
+    return gulp.src([
+        src_assets_folder + 'fonts/**/*.*',
+    ], {
+        base: src_assets_folder,
+        since: gulp.lastRun('fonts')
+    })
+        .pipe(gulp.dest(dist_assets_folder))
+        .pipe(browserSync.stream());
+});
 
 gulp.task('ejs', () => {
     return gulp.src([
@@ -73,9 +83,9 @@ gulp.task('sass', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'js', 'ejs', 'sass'));
+gulp.task('build', gulp.series('clear', 'html', 'fonts', 'js', 'ejs', 'sass'));
 
-gulp.task('dev', gulp.series('html', 'js', 'ejs', 'sass'));
+gulp.task('dev', gulp.series('html', 'fonts', 'js', 'ejs', 'sass'));
 
 gulp.task('serve', () => {
     return browserSync.init({
