@@ -32,6 +32,18 @@ gulp.task('html', () => {
         .pipe(browserSync.stream());
 });
 
+gulp.task('js', () => {
+    return gulp.src([
+        src_assets_folder + 'js/**/*.js',
+    ], {
+        base: src_assets_folder,
+        since: gulp.lastRun('js')
+    })
+        .pipe(gulp.dest(dist_assets_folder))
+        .pipe(browserSync.stream());
+});
+
+
 gulp.task('ejs', () => {
     return gulp.src([
         src_folder + '*.ejs',
@@ -58,9 +70,9 @@ gulp.task('sass', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'ejs', 'sass'));
+gulp.task('build', gulp.series('clear', 'html', 'js', 'ejs', 'sass'));
 
-gulp.task('dev', gulp.series('html', 'ejs', 'sass'));
+gulp.task('dev', gulp.series('html', 'js', 'ejs', 'sass'));
 
 gulp.task('serve', () => {
     return browserSync.init({
