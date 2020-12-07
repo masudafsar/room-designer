@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
-<%- include('parts/site/head.ejs') %>
+<%- include('./parts/site/head.ejs') %>
 <body>
 
 <div class="container-fluid">
     <div class="row main-row">
-        <%- include('parts/page/sidebar/sidebar.ejs') %>
+        <%- include('./parts/page/sidebar/sidebar.ejs') %>
+
+        <div class="col-xs-9 main">
+            <%- include('./parts/page/3d-viewer/3d-viewer.ejs') %>
+        </div>
     </div>
 </div>
 
-<%- include('parts/site/foot.ejs') %>
+<%- include('./parts/site/foot.ejs') %>
 </body>
 </html>
