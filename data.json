@@ -5,15 +5,15 @@
       "nav": [
         {
           "id": "floorplan",
-          "title": "Edit Floorplan"
+          "title": "ویرایش پلان"
         },
         {
           "id": "design",
-          "title": "Design"
+          "title": "طراحی"
         },
         {
           "id": "items",
-          "title": "Add Items"
+          "title": "اضافه کردن مبلمان"
         }
       ]
     }
