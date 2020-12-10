@@ -203,7 +203,8 @@ var SideMenu = function (blueprint3d, floorplanControls, modalEffects) {
 
     var tabs = {
         "FLOORPLAN": $("#floorplan_tab"),
-        "SHOP": $("#items_tab"),
+        "CARPETS": $("#carpets_tab"),
+        "ITEMS": $("#items_tab"),
         "DESIGN": $("#design_tab")
     }
 
@@ -219,9 +220,13 @@ var SideMenu = function (blueprint3d, floorplanControls, modalEffects) {
             "div": $("#floorplanner"),
             "tab": tabs.FLOORPLAN
         },
-        "SHOP": {
+        "CARPETS": {
+            "div": $("#add-carpets"),
+            "tab": tabs.CARPETS
+        },
+        "ITEMS": {
             "div": $("#add-items"),
-            "tab": tabs.SHOP
+            "tab": tabs.ITEMS
         }
     }
 
@@ -318,12 +323,13 @@ var SideMenu = function (blueprint3d, floorplanControls, modalEffects) {
     function handleWindowResize() {
         $(".sidebar").height(window.innerHeight);
         $("#add-items").height(window.innerHeight);
+        $("#add-carpets").height(window.innerHeight);
 
     };
 
     // TODO: this doesn't really belong here
     function initItems() {
-        $("#add-items").find(".add-item").mousedown(function (e) {
+        $("#add-items, #add-carpets").find(".add-item").mousedown(function (e) {
             var modelUrl = $(this).attr("model-url");
             var itemType = parseInt($(this).attr("model-type"));
             var metadata = {

@@ -12,6 +12,10 @@
     overflow-y: auto;
 }
 
+#add-carpets {
+    @extend #add-items;
+}
+
 #main-controls {
     position: absolute;
     top: 20px;
