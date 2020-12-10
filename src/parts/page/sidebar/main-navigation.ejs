@@ -2,9 +2,9 @@
 <ul class="nav nav-sidebar">
     <% data.site.sidebar.nav.forEach(function (navItem){ %>
         <li id="<%= navItem.id %>_tab">
-            <a href="#">
+            <a href="#" class="text-left">
                 <%= navItem.title %>
-                <span class="glyphicon glyphicon-chevron-left pull-left"></span>
+                <span class="glyphicon glyphicon-chevron-right pull-right"></span>
             </a>
         </li>
     <% }); %>
