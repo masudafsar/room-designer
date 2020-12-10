@@ -172,10 +172,30 @@ $(document).ready(function () {
     ];
 
     const carpets = [
-         {
-            "name": "Blue Rug",
-            "image": "/statics/models/thumbnails/thumbnail_cb-blue-block60x96.png",
-            "model": "/statics/models/js/cb-blue-block-60x96.js",
+        {
+            "name": "فرش 1 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-001.jpg",
+            "model": "/statics/carpets/json/carpet-001.json",
+            "type": "8"
+        }, {
+            "name": "فرش 2 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-002.jpg",
+            "model": "/statics/carpets/json/carpet-002.json",
+            "type": "8"
+        }, {
+            "name": "فرش 3 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-003.jpg",
+            "model": "/statics/carpets/json/carpet-003.json",
+            "type": "8"
+        }, {
+            "name": "فرش 4 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-004.jpg",
+            "model": "/statics/carpets/json/carpet-004.json",
+            "type": "8"
+        }, {
+            "name": "فرش 5 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-005.jpg",
+            "model": "/statics/carpets/json/carpet-005.json",
             "type": "8"
         },
     ];
