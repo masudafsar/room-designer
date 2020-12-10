@@ -519,7 +519,8 @@ $(document).ready(function () {
         threeElement: '#viewer',
         threeCanvasElement: 'three-canvas',
         textureDir: "/statics/models/textures/",
-        widget: false
+        widget: false,
+        dimUnit: "m"
     }
     var blueprint3d = new BP3D.Blueprint3d(opts);
 
