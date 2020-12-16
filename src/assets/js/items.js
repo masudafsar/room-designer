@@ -59,25 +59,20 @@ const items = [
         "image": "/statics/items/preview/window-white-3.jpg",
         "type": "3"
     },
-    ///
+
     {
-        "name": "Closed Door",
-        "image": "/statics/models/thumbnails/thumbnail_Screen_Shot_2014-10-27_at_8.04.12_PM.png",
-        "model": "/statics/models/js/closed-door28x80_baked.js",
+        "name": "در اتاق - حالت بسته",
+        "model": "/statics/items/json/door-close.json",
+        "image": "/statics/items/preview/door-close.jpg",
         "type": "7"
     },
     {
-        "name": "Open Door",
-        "image": "/statics/models/thumbnails/thumbnail_Screen_Shot_2014-10-27_at_8.22.46_PM.png",
-        "model": "/statics/models/js/open_door.js",
+        "name": "در اتاق - حالت باز",
+        "model": "/statics/items/json/door-open.json",
+        "image": "/statics/items/preview/door-open.jpg",
         "type": "7"
     },
-    {
-        "name": "Window",
-        "image": "/statics/models/thumbnails/thumbnail_window.png",
-        "model": "/statics/models/js/whitewindow.js",
-        "type": "3"
-    },
+    
     {
         "name": "Chair",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
