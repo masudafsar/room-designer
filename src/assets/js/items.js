@@ -40,6 +40,25 @@ const items = [
         "image": "/statics/items/preview/window-wooden-2.jpg",
         "type": "3"
     },
+
+    {
+        "name": "پنجره سفید کوچک",
+        "model": "/statics/items/json/window-white-1.json",
+        "image": "/statics/items/preview/window-white-1.jpg",
+        "type": "3"
+    },
+    {
+        "name": "پنجره سفید متوسط",
+        "model": "/statics/items/json/window-white-2.json",
+        "image": "/statics/items/preview/window-white-2.jpg",
+        "type": "3"
+    },
+    {
+        "name": "پنجره سفید بزرگ",
+        "model": "/statics/items/json/window-white-3.json",
+        "image": "/statics/items/preview/window-white-3.jpg",
+        "type": "3"
+    },
     ///
     {
         "name": "Closed Door",
