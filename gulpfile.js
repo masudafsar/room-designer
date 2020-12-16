@@ -114,6 +114,7 @@ gulp.task('watch', () => {
         src_folder + '**/*.html',
         src_folder + '**/*.ejs',
         src_assets_folder + '**/*.*',
+        src_statics_folder + '**/*.*',
         'data.json',
     ];
 
