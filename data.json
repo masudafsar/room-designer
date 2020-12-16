@@ -31,6 +31,27 @@
           "thumbnail": "/statics/rooms/thumbnails/thumbnail_light_fine_wood.jpg",
           "stretch": false,
           "scale": 300
+        },
+        {
+          "title": "لمینت چوبی ۱",
+          "url": "/statics/rooms/textures/laminate-1.jpg",
+          "thumbnail": "/statics/rooms/textures/laminate-1.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "لمینت چوبی ۲",
+          "url": "/statics/rooms/textures/laminate-2.jpg",
+          "thumbnail": "/statics/rooms/textures/laminate-2.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "لمینت چوبی ۳",
+          "url": "/statics/rooms/textures/laminate-3.jpg",
+          "thumbnail": "/statics/rooms/textures/laminate-3.jpg",
+          "stretch": false,
+          "scale": 100
         }
       ]
     },

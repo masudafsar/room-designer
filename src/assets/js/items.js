@@ -72,7 +72,7 @@ const items = [
         "image": "/statics/items/preview/door-open.jpg",
         "type": "7"
     },
-    
+
     {
         "name": "Chair",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
