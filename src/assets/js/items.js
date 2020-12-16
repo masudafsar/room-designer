@@ -23,9 +23,21 @@ function GenerateItems(items, container) {
 
 const items = [
     {
-        "name": "پنجره ۲ شیشه",
-        "image": "/statics/items/preview/window-2-glasses.jpg",
-        "model": "/statics/items/json/window-2-glasses.json",
+        "name": "پنجره چوبی کوچک",
+        "model": "/statics/items/json/window-wooden-1.json",
+        "image": "/statics/items/preview/window-wooden-1.jpg",
+        "type": "3"
+    },
+    {
+        "name": "پنجره چوبی متوسط",
+        "model": "/statics/items/json/window-wooden-2.json",
+        "image": "/statics/items/preview/window-wooden-2.jpg",
+        "type": "3"
+    },
+    {
+        "name": "پنجره چوبی بزرگ",
+        "model": "/statics/items/json/window-wooden-2.json",
+        "image": "/statics/items/preview/window-wooden-2.jpg",
         "type": "3"
     },
     ///
