@@ -18,8 +18,6 @@ const dist_folder = './dist/';
 const dist_assets_folder = dist_folder + 'assets/';
 const dist_statics_folder = dist_folder + 'statics/';
 
-const siteData = JSON.parse(fs.readFileSync('./data.json'));
-
 gulp.task('clear', () => {
     return del([
         dist_folder,
@@ -71,6 +69,7 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('ejs', () => {
+    const siteData = JSON.parse(fs.readFileSync('./data.json'));
     return gulp.src([
         src_folder + '*.ejs',
     ])
@@ -114,10 +113,8 @@ gulp.task('watch', () => {
     const watch = [
         src_folder + '**/*.html',
         src_folder + '**/*.ejs',
-        src_assets_folder + 'sass/**/*.sass',
-        src_assets_folder + 'scss/**/*.scss',
-        src_assets_folder + 'js/**/*.js',
-        src_assets_folder + '**/*.json',
+        src_assets_folder + '**/*.*',
+        'data.json',
     ];
 
     gulp.watch(watch, gulp.series('dev'))

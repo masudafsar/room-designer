@@ -389,7 +389,7 @@ var BP3D;
             };
             /** Configuration data loaded from/stored to extern. */
             Configuration.data = {
-                dimUnit: Core.dimInch,
+                dimUnit: Core.dimMeter,
                 wallHeight: 250,
                 wallThickness: 10
             };

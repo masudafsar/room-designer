@@ -1,3 +1,26 @@
+function GenerateItems(items, container) {
+    items.forEach((item) => {
+        let addItemImage = $("<img/>")
+            .attr('src', item.image)
+            .attr('alt', item.name);
+
+        let addItemButton = $("<a></a>")
+            .addClass('thumbnail')
+            .addClass('add-item')
+            .attr('model-name', item.name)
+            .attr('model-url', item.model)
+            .attr('model-type', item.type)
+            .text(item.name)
+            .prepend(addItemImage);
+
+        let addItemButtonContainer = $("<div></div>")
+            .addClass('col-sm-4')
+            .append(addItemButton);
+
+        container.append(addItemButtonContainer);
+    });
+}
+
 $(document).ready(function () {
     const items = [
         {
@@ -133,12 +156,6 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Blue Rug",
-            "image": "/statics/models/thumbnails/thumbnail_cb-blue-block60x96.png",
-            "model": "/statics/models/js/cb-blue-block-60x96.js",
-            "type": "8"
-        },
-        {
             "name": "NYC Poster",
             "image": "/statics/models/thumbnails/thumbnail_nyc2.jpg",
             "model": "/statics/models/js/nyc-poster2.js",
@@ -154,25 +171,35 @@ $(document).ready(function () {
          */
     ];
 
-    const itemsDiv = $("#items-wrapper");
-    items.forEach((item) => {
-        let addItemImage = $("<img/>")
-            .attr('src', item.image)
-            .attr('alt', item.name);
+    const carpets = [
+        {
+            "name": "فرش 1 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-001.jpg",
+            "model": "/statics/carpets/json/carpet-001.json",
+            "type": "8"
+        }, {
+            "name": "فرش 2 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-002.jpg",
+            "model": "/statics/carpets/json/carpet-002.json",
+            "type": "8"
+        }, {
+            "name": "فرش 3 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-003.jpg",
+            "model": "/statics/carpets/json/carpet-003.json",
+            "type": "8"
+        }, {
+            "name": "فرش 4 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-004.jpg",
+            "model": "/statics/carpets/json/carpet-004.json",
+            "type": "8"
+        }, {
+            "name": "فرش 5 - 6 متری",
+            "image": "/statics/carpets/thumbnails/carpet-005.jpg",
+            "model": "/statics/carpets/json/carpet-005.json",
+            "type": "8"
+        },
+    ];
 
-        let addItemButton = $("<a></a>")
-            .addClass('thumbnail')
-            .addClass('add-item')
-            .attr('model-name', item.name)
-            .attr('model-url', item.model)
-            .attr('model-type', item.type)
-            .text(item.name)
-            .prepend(addItemImage);
-
-        let addItemButtonContainer = $("<div></div>")
-            .addClass('col-sm-4')
-            .append(addItemButton);
-
-        itemsDiv.append(addItemButtonContainer);
-    });
+    GenerateItems(items, $("#items-wrapper"));
+    GenerateItems(carpets, $("#carpets-wrapper"));
 });
