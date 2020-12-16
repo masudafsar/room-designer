@@ -26,13 +26,6 @@
     "floor": {
       "textures": [
         {
-          "title": "light fine wood",
-          "url": "/statics/rooms/textures/light_fine_wood.jpg",
-          "thumbnail": "/statics/rooms/thumbnails/thumbnail_light_fine_wood.jpg",
-          "stretch": false,
-          "scale": 300
-        },
-        {
           "title": "لمینت چوبی ۱",
           "url": "/statics/rooms/textures/laminate-1.jpg",
           "thumbnail": "/statics/rooms/textures/laminate-1.jpg",
@@ -53,7 +46,6 @@
           "stretch": false,
           "scale": 100
         },
-
         {
           "title": "موکت ۱",
           "url": "/statics/rooms/textures/carpet-1.jpg",
@@ -67,61 +59,71 @@
           "thumbnail": "/statics/rooms/textures/carpet-2.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۳",
           "url": "/statics/rooms/textures/carpet-3.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-3.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۴",
           "url": "/statics/rooms/textures/carpet-4.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-4.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۵",
           "url": "/statics/rooms/textures/carpet-5.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-5.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۶",
           "url": "/statics/rooms/textures/carpet-6.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-6.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۷",
           "url": "/statics/rooms/textures/carpet-7.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-7.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۸",
           "url": "/statics/rooms/textures/carpet-8.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-8.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۹",
           "url": "/statics/rooms/textures/carpet-9.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-9.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۱۰",
           "url": "/statics/rooms/textures/carpet-10.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-10.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۱۱",
           "url": "/statics/rooms/textures/carpet-11.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-11.jpg",
           "stretch": false,
           "scale": 100
-        },{
+        },
+        {
           "title": "موکت ۱۲",
           "url": "/statics/rooms/textures/carpet-12.jpg",
           "thumbnail": "/statics/rooms/textures/carpet-12.jpg",
@@ -133,23 +135,58 @@
     "wall": {
       "textures": [
         {
-          "title": "marbletiles",
-          "url": "/statics/rooms/textures/marbletiles.jpg",
-          "thumbnail": "/statics/rooms/thumbnails/thumbnail_marbletiles.jpg",
+          "title": "کاغذ دیواری ساده",
+          "url": "/statics/rooms/textures/wallpaper-0.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-0.jpg",
           "stretch": false,
-          "scale": 300
+          "scale": 100
         },
         {
-          "title": "wallmap yellow",
-          "url": "/statics/rooms/textures/wallmap_yellow.png",
-          "thumbnail": "/statics/rooms/thumbnails/thumbnail_wallmap_yellow.png",
-          "stretch": true,
-          "scale": 0
+          "title": "کاغذ دیواری طرح گل",
+          "url": "/statics/rooms/textures/wallpaper-1.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-1.jpg",
+          "stretch": false,
+          "scale": 100
         },
         {
-          "title": "light brick",
-          "url": "/statics/rooms/textures/light_brick.jpg",
-          "thumbnail": "/statics/rooms/thumbnails/thumbnail_light_brick.jpg",
+          "title": "کاغذ دیواری طرح بوته",
+          "url": "/statics/rooms/textures/wallpaper-2.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-2.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "کاغذ دیواری طرح برگ",
+          "url": "/statics/rooms/textures/wallpaper-3.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-3.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "کاغذ دیواری طرح دختر",
+          "url": "/statics/rooms/textures/wallpaper-4.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-4.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "کاغذ دیواری طرح انتزاعی",
+          "url": "/statics/rooms/textures/wallpaper-5.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-5.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "کاغذ دیواری طرح راه راه",
+          "url": "/statics/rooms/textures/wallpaper-6.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-6.jpg",
+          "stretch": false,
+          "scale": 100
+        },
+        {
+          "title": "کاغذ دیواری طرح کلاسیک",
+          "url": "/statics/rooms/textures/wallpaper-7.jpg",
+          "thumbnail": "/statics/rooms/textures/wallpaper-7.jpg",
           "stretch": false,
           "scale": 100
         }
