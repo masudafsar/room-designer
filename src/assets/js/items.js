@@ -85,6 +85,18 @@ const items = [
         "image": "/statics/items/preview/cabinet-1-door.jpg",
         "type": "1"
     },
+    {
+        "name": "کابینت گوشه ساده",
+        "model": "/statics/items/json/cabinet-corner.json",
+        "image": "/statics/items/preview/cabinet-corner.jpg",
+        "type": "1"
+    },
+    {
+        "name": "کابینت سینک",
+        "model": "/statics/items/json/cabinet-sink.json",
+        "image": "/statics/items/preview/cabinet-sink.jpg",
+        "type": "1"
+    },
 
     {
         "name": "Chair",
