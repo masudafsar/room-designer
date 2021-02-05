@@ -208,25 +208,59 @@ const carpets = [
         "image": "/statics/carpets/thumbnails/carpet-001.jpg",
         "model": "/statics/carpets/json/carpet-001.json",
         "type": "8"
-    }, {
+    },
+    {
         "name": "فرش 2 - 6 متری",
         "image": "/statics/carpets/thumbnails/carpet-002.jpg",
         "model": "/statics/carpets/json/carpet-002.json",
         "type": "8"
-    }, {
+    },
+    {
         "name": "فرش 3 - 6 متری",
         "image": "/statics/carpets/thumbnails/carpet-003.jpg",
         "model": "/statics/carpets/json/carpet-003.json",
         "type": "8"
-    }, {
+    },
+    {
         "name": "فرش 4 - 6 متری",
         "image": "/statics/carpets/thumbnails/carpet-004.jpg",
         "model": "/statics/carpets/json/carpet-004.json",
         "type": "8"
-    }, {
+    },
+    {
         "name": "فرش 5 - 6 متری",
         "image": "/statics/carpets/thumbnails/carpet-005.jpg",
         "model": "/statics/carpets/json/carpet-005.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 6 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-006.jpg",
+        "model": "/statics/carpets/json/carpet-006.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 7 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-007.jpg",
+        "model": "/statics/carpets/json/carpet-007.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 8 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-008.jpg",
+        "model": "/statics/carpets/json/carpet-008.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 9 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-009.jpg",
+        "model": "/statics/carpets/json/carpet-009.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 10 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-010.jpg",
+        "model": "/statics/carpets/json/carpet-010.json",
         "type": "8"
     },
 ];
