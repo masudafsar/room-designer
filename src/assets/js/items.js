@@ -263,6 +263,90 @@ const carpets = [
         "model": "/statics/carpets/json/carpet-010.json",
         "type": "8"
     },
+    {
+        "name": "فرش 11 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-011.jpg",
+        "model": "/statics/carpets/json/carpet-011.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 12 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-012.jpg",
+        "model": "/statics/carpets/json/carpet-012.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 13 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-013.jpg",
+        "model": "/statics/carpets/json/carpet-013.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 14 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-014.jpg",
+        "model": "/statics/carpets/json/carpet-014.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 15 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-015.jpg",
+        "model": "/statics/carpets/json/carpet-015.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 16 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-016.jpg",
+        "model": "/statics/carpets/json/carpet-016.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 17 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-017.jpg",
+        "model": "/statics/carpets/json/carpet-017.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 18 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-018.jpg",
+        "model": "/statics/carpets/json/carpet-018.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 19 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-019.jpg",
+        "model": "/statics/carpets/json/carpet-019.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 20 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-020.jpg",
+        "model": "/statics/carpets/json/carpet-020.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 21 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-021.jpg",
+        "model": "/statics/carpets/json/carpet-021.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 22 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-022.jpg",
+        "model": "/statics/carpets/json/carpet-022.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 23 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-023.jpg",
+        "model": "/statics/carpets/json/carpet-023.json",
+        "type": "8"
+    },
+    {
+        "name": "فرش 24 - 6 متری",
+        "image": "/statics/carpets/thumbnails/carpet-024.jpg",
+        "model": "/statics/carpets/json/carpet-024.json",
+        "type": "8"
+    },
 ];
 
 $(document).ready(function () {
