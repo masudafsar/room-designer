@@ -118,6 +118,25 @@ const items = [
     },
 
     {
+        "name": "اجاق ساده",
+        "model": "/statics/items/json/stove-01.json",
+        "image": "/statics/items/preview/stove-01.jpg",
+        "type": "1"
+    },
+    {
+        "name": "اجاق فردار",
+        "model": "/statics/items/json/stove-02.json",
+        "image": "/statics/items/preview/stove-02.jpg",
+        "type": "1"
+    },
+    {
+        "name": "اجاق فردار",
+        "model": "/statics/items/json/stove-03.json",
+        "image": "/statics/items/preview/stove-03.jpg",
+        "type": "1"
+    },
+
+    {
         "name": "Chair",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
         "model": "/statics/models/js/gus-churchchair-whiteoak.js",
