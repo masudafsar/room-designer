@@ -99,6 +99,25 @@ const items = [
     },
 
     {
+        "name": "یخچال دو طبقه",
+        "model": "/statics/items/json/fridge-01.json",
+        "image": "/statics/items/preview/fridge-01.jpg",
+        "type": "1"
+    },
+    {
+        "name": "یخچال ساید بای ساید",
+        "model": "/statics/items/json/fridge-02.json",
+        "image": "/statics/items/preview/fridge-02.jpg",
+        "type": "1"
+    },
+    {
+        "name": "یخچال ساید بای ساید",
+        "model": "/statics/items/json/fridge-03.json",
+        "image": "/statics/items/preview/fridge-03.jpg",
+        "type": "1"
+    },
+
+    {
         "name": "Chair",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
         "model": "/statics/models/js/gus-churchchair-whiteoak.js",
