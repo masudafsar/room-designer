@@ -74,6 +74,19 @@ const items = [
     },
 
     {
+        "name": "کابینت دو درب",
+        "model": "/statics/items/json/cabinet-2-doors.json",
+        "image": "/statics/items/preview/cabinet-2-doors.jpg",
+        "type": "1"
+    },
+    {
+        "name": "کابینت تک درب",
+        "model": "/statics/items/json/cabinet-1-door.json",
+        "image": "/statics/items/preview/cabinet-1-door.jpg",
+        "type": "1"
+    },
+
+    {
         "name": "Chair",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
         "model": "/statics/models/js/gus-churchchair-whiteoak.js",
