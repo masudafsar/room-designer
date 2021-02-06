@@ -35,9 +35,40 @@ const items = [
         "type": "1"
     },
     {
+        "name": "راحتی تک نفره",
+        "model": "/statics/items/json/sofa-01.json",
+        "image": "/statics/items/preview/sofa-01.jpg",
+        "type": "1"
+    },
+    {
+        "name": "راحتی تک نفره",
+        "model": "/statics/items/json/sofa-02.json",
+        "image": "/statics/items/preview/sofa-02.jpg",
+        "type": "1"
+    },
+    {
+        "name": "راحتی تک نفره",
+        "model": "/statics/items/json/sofa-03.json",
+        "image": "/statics/items/preview/sofa-03.jpg",
+        "type": "1"
+    },
+    {
         "name": "راحتی دو نفره",
         "model": "/statics/items/json/sofa-green-1.json",
         "image": "/statics/items/preview/sofa-green-1.jpg",
+        "type": "1"
+    },
+
+    {
+        "name": "تخت تک نفره",
+        "model": "/statics/items/json/bed-1.json",
+        "image": "/statics/items/preview/bed-1.jpg",
+        "type": "1"
+    },
+    {
+        "name": "تخت دو نفره",
+        "model": "/statics/items/json/bed-2.json",
+        "image": "/statics/items/preview/bed-2.jpg",
         "type": "1"
     },
 
