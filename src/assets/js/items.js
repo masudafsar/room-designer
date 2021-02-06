@@ -58,6 +58,7 @@ const items = [
         "image": "/statics/items/preview/sofa-green-1.jpg",
         "type": "1"
     },
+
     {
         "name": "جلو مبلی",
         "model": "/statics/items/json/coffee-table-1.json",
@@ -68,6 +69,12 @@ const items = [
         "name": "میز نهارخوری",
         "model": "/statics/items/json/dining-table-1.json",
         "image": "/statics/items/preview/dining-table-1.jpg",
+        "type": "1"
+    },
+    {
+        "name": "میز آرایش",
+        "model": "/statics/items/json/vanity-1.json",
+        "image": "/statics/items/preview/vanity-1.jpg",
         "type": "1"
     },
 
