@@ -1,8 +1,5 @@
-body {
-    color: #333333;
-    background-color: #FEFEFE;
-
-    h1 {
-        color: #555555;
-    }
-}
+@import "style/generals";
+@import "style/sidebar";
+@import "style/main";
+@import "style/loading-modal";
+@import "style/design";

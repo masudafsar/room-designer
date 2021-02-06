@@ -9,16 +9,30 @@ const browserSync = require('browser-sync').create();
 const dependents = require('gulp-dependents');
 const ejs = require('gulp-ejs');
 const rename = require('gulp-rename')
+const fs = require('fs');
 
 const src_folder = './src/';
 const src_assets_folder = src_folder + 'assets/';
+const src_statics_folder = src_folder + 'statics/';
 const dist_folder = './dist/';
 const dist_assets_folder = dist_folder + 'assets/';
+const dist_statics_folder = dist_folder + 'statics/';
 
 gulp.task('clear', () => {
     return del([
         dist_folder,
     ]);
+});
+
+gulp.task('statics', () => {
+    return gulp.src([
+        src_statics_folder + '**/*.*',
+    ], {
+        base: src_statics_folder,
+        since: gulp.lastRun('statics')
+    })
+        .pipe(gulp.dest(dist_statics_folder))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('html', () => {
@@ -32,12 +46,35 @@ gulp.task('html', () => {
         .pipe(browserSync.stream());
 });
 
+gulp.task('js', () => {
+    return gulp.src([
+        src_assets_folder + 'js/**/*.js',
+    ], {
+        base: src_assets_folder,
+        since: gulp.lastRun('js')
+    })
+        .pipe(gulp.dest(dist_assets_folder))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('fonts', () => {
+    return gulp.src([
+        src_assets_folder + 'fonts/**/*.*',
+    ], {
+        base: src_assets_folder,
+        since: gulp.lastRun('fonts')
+    })
+        .pipe(gulp.dest(dist_assets_folder))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('ejs', () => {
+    const siteData = JSON.parse(fs.readFileSync('./data.json'));
     return gulp.src([
         src_folder + '*.ejs',
     ])
-        .pipe(ejs())
-        .pipe(rename({ extname: '.html' }))
+        .pipe(ejs({data: siteData}))
+        .pipe(rename({extname: '.html'}))
         .pipe(gulp.dest(dist_folder))
         .pipe(browserSync.stream());
 });
@@ -58,9 +95,9 @@ gulp.task('sass', () => {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'ejs', 'sass'));
+gulp.task('build', gulp.series('clear', 'statics', 'html', 'fonts', 'js', 'ejs', 'sass'));
 
-gulp.task('dev', gulp.series('html', 'ejs', 'sass'));
+gulp.task('dev', gulp.series('statics', 'html', 'fonts', 'js', 'ejs', 'sass'));
 
 gulp.task('serve', () => {
     return browserSync.init({
@@ -75,9 +112,10 @@ gulp.task('serve', () => {
 gulp.task('watch', () => {
     const watch = [
         src_folder + '**/*.html',
-        src_assets_folder + 'sass/**/*.sass',
-        src_assets_folder + 'scss/**/*.scss',
-        src_assets_folder + 'js/**/*.js',
+        src_folder + '**/*.ejs',
+        src_assets_folder + '**/*.*',
+        src_statics_folder + '**/*.*',
+        'data.json',
     ];
 
     gulp.watch(watch, gulp.series('dev'))

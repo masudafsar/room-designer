@@ -1,0 +1,22 @@
+<!-- Floor textures -->
+<div id="floorTexturesDiv" style="display:none; padding: 0 20px">
+    <div class="panel panel-default">
+        <div class="panel-heading">تغییر طرح کف‌پوش</div>
+        <div class="panel-body" style="color: #333333">
+
+            <% data.designer.floor.textures.forEach(function (item) { %>
+                <div class="col-md-6" style="padding: 3px">
+                    <a href="#" class="thumbnail texture-select-thumbnail"
+                       title="<%= item.title %>"
+                       texture-url="<%= item.url %>"
+                       texture-stretch="<%= item.stretch %>"
+                       texture-scale="<%= item.scale %>">
+                        <img alt="Thumbnail <%= item.title %>" src="<%= item.thumbnail %>"/>
+                        <span><%= item.title %></span>
+                    </a>
+                </div>
+            <% }); %>
+
+        </div>
+    </div>
+</div>

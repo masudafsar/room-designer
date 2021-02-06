@@ -1,0 +1,75 @@
+#viewer {
+    display: none;
+}
+
+#floorplanner {
+    display: none;
+}
+
+#add-items {
+    display: none;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#add-carpets {
+    @extend #add-items;
+}
+
+#main-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0;
+}
+
+#camera-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    padding: 0 20px;
+    text-align: right;
+}
+
+#floorplanner-controls {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px 0;
+    padding: 0 20px;
+    width: 100%;
+}
+
+#draw-walls-hint {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: #ffffff;
+    padding: 5px 10px;
+    z-index: 10;
+    display: none;
+}
+
+.add-item {
+    cursor: pointer;
+}
+
+.btn-file {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        cursor: inherit;
+        display: block;
+    }
+}

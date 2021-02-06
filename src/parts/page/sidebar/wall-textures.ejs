@@ -1,0 +1,21 @@
+<!-- Wall Textures -->
+<div id="wallTextures" style="display:none; padding: 0 20px">
+    <div class="panel panel-default">
+        <div class="panel-heading">تغییر طراحی دیوار</div>
+        <div class="panel-body" style="color: #333333">
+
+            <% data.designer.wall.textures.forEach(function (item) { %>
+                <div class="col-sm-6" style="padding: 3px">
+                    <a href="#" class="thumbnail texture-select-thumbnail"
+                       title="<%= item.title %>"
+                       texture-url="<%= item.url %>"
+                       texture-stretch="<%= item.stretch %>"
+                       texture-scale="<%= item.scale %>">
+                        <img alt="Thumbnail <%= item.title %>" src="<%= item.thumbnail %>"/>
+                    </a>
+                </div>
+            <% }); %>
+
+        </div>
+    </div>
+</div>
