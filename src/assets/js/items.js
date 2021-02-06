@@ -23,6 +23,25 @@ function GenerateItems(items, container) {
 
 const items = [
     {
+        "name": "راحتی تک نفره",
+        "model": "/statics/items/json/sofa-blue-1.json",
+        "image": "/statics/items/preview/sofa-blue-1.jpg",
+        "type": "1"
+    },
+    {
+        "name": "راحتی تک نفره",
+        "model": "/statics/items/json/sofa-green-2.json",
+        "image": "/statics/items/preview/sofa-green-2.jpg",
+        "type": "1"
+    },
+    {
+        "name": "راحتی دو نفره",
+        "model": "/statics/items/json/sofa-green-1.json",
+        "image": "/statics/items/preview/sofa-green-1.jpg",
+        "type": "1"
+    },
+
+    {
         "name": "پنجره چوبی کوچک",
         "model": "/statics/items/json/window-wooden-1.json",
         "image": "/statics/items/preview/window-wooden-1.jpg",
@@ -143,7 +162,7 @@ const items = [
         "type": "1"
     },
 
-    {
+    /*{
         "name": "Chair",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
         "model": "/statics/models/js/gus-churchchair-whiteoak.js",
