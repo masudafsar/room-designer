@@ -212,134 +212,102 @@ const items = [
         "type": "1"
     },
 
-    /*{
-        "name": "Chair",
+    {
+        "name": "صندلی",
         "image": "/statics/models/thumbnails/thumbnail_Church-Chair-oak-white_1024x1024.jpg",
         "model": "/statics/models/js/gus-churchchair-whiteoak.js",
         "type": "1"
     },
     {
-        "name": "Red Chair",
+        "name": "راحتی تک نفره",
         "image": "/statics/models/thumbnails/thumbnail_tn-orange.png",
         "model": "/statics/models/js/ik-ekero-orange_baked.js",
         "type": "1"
     },
     {
-        "name": "Blue Chair",
+        "name": "راحتی تک نفره",
         "image": "/statics/models/thumbnails/thumbnail_ekero-blue3.png",
         "model": "/statics/models/js/ik-ekero-blue_baked.js",
         "type": "1"
     },
     {
-        "name": "Dresser - Dark Wood",
+        "name": "کشو لباس",
         "image": "/statics/models/thumbnails/thumbnail_matera_dresser_5.png",
         "model": "/statics/models/js/DWR_MATERA_DRESSER2.js",
         "type": "1"
     },
     {
-        "name": "Dresser - White",
+        "name": "کشو لباس",
         "image": "/statics/models/thumbnails/thumbnail_img25o.jpg",
         "model": "/statics/models/js/we-narrow6white_baked.js",
         "type": "1"
     },
     {
-        "name": "Bedside table - Shale",
+        "name": "میز کنار مبلی",
         "image": "/statics/models/thumbnails/thumbnail_Blu-Dot-Shale-Bedside-Table.jpg",
         "model": "/statics/models/js/bd-shalebedside-smoke_baked.js",
         "type": "1"
     },
     {
-        "name": "Bedside table - White",
+        "name": "میز کنار مبلی",
         "image": "/statics/models/thumbnails/thumbnail_arch-white-oval-nightstand.jpg",
         "model": "/statics/models/js/cb-archnight-white_baked.js",
         "type": "1"
     },
     {
-        "name": "Wardrobe - White",
-        "image": "/statics/models/thumbnails/thumbnail_TN-ikea-kvikine.png",
-        "model": "/statics/models/js/ik-kivine_baked.js",
-        "type": "1"
-    },
-    {
-        "name": "Full Bed",
+        "name": "تخت دو نفره",
         "image": "/statics/models/thumbnails/thumbnail_nordli-bed-frame__0159270_PE315708_S4.JPG",
         "model": "/statics/models/js/ik_nordli_full.js",
         "type": "1"
     },
     {
-        "name": "Bookshelf",
+        "name": "قفسه کتاب",
         "image": "/statics/models/thumbnails/thumbnail_kendall-walnut-bookcase.jpg",
         "model": "/statics/models/js/cb-kendallbookcasewalnut_baked.js",
         "type": "1"
     },
     {
-        "name": "Media Console - White",
+        "name": "میز تلوزیون",
         "image": "/statics/models/thumbnails/thumbnail_clapboard-white-60-media-console-1.jpg",
         "model": "/statics/models/js/cb-clapboard_baked.js",
         "type": "1"
     },
     {
-        "name": "Media Console - Black",
-        "image": "/statics/models/thumbnails/thumbnail_moore-60-media-console-1.jpg",
-        "model": "/statics/models/js/cb-moore_baked.js",
-        "type": "1"
-    },
-    {
-        "name": "Sofa - Grey",
+        "name": "راحتی سه نفره",
         "image": "/statics/models/thumbnails/thumbnail_rochelle-sofa-3.jpg",
         "model": "/statics/models/js/cb-rochelle-gray_baked.js",
         "type": "1"
     },
     {
-        "name": "Wooden Trunk",
+        "name": "جلو مبلی",
         "image": "/statics/models/thumbnails/thumbnail_teca-storage-trunk.jpg",
         "model": "/statics/models/js/cb-tecs_baked.js",
         "type": "1"
     },
     {
-        "name": "Floor Lamp",
+        "name": "چراغ پایه‌دار",
         "image": "/statics/models/thumbnails/thumbnail_ore-white.png",
         "model": "/statics/models/js/ore-3legged-white_baked.js",
         "type": "1"
     },
     {
-        "name": "Coffee Table - Wood",
+        "name": "جلو مبلی",
         "image": "/statics/models/thumbnails/thumbnail_stockholm-coffee-table__0181245_PE332924_S4.JPG",
         "model": "/statics/models/js/ik-stockholmcoffee-brown.js",
         "type": "1"
     },
     {
-        "name": "Side Table",
+        "name": "میز کنار مبلی",
         "image": "/statics/models/thumbnails/thumbnail_Screen_Shot_2014-02-21_at_1.24.58_PM.png",
         "model": "/statics/models/js/GUSossingtonendtable.js",
         "type": "1"
     },
     {
-        "name": "Dining Table",
+        "name": "میز نهارخوری",
         "image": "/statics/models/thumbnails/thumbnail_scholar-dining-table.jpg",
         "model": "/statics/models/js/cb-scholartable_baked.js",
         "type": "1"
     },
-    {
-        "name": "Dining table",
-        "image": "/statics/models/thumbnails/thumbnail_Screen_Shot_2014-01-28_at_6.49.33_PM.png",
-        "model": "/statics/models/js/BlakeAvenuejoshuatreecheftable.js",
-        "type": "1"
-    },
-    {
-        "name": "NYC Poster",
-        "image": "/statics/models/thumbnails/thumbnail_nyc2.jpg",
-        "model": "/statics/models/js/nyc-poster2.js",
-        "type": "2"
-    }
-    /*
-    {
-       "name" : "",
-       "image" : "",
-       "model" : "",
-       "type" : "1"
-     },
-     */
 ];
 const carpets = [
     {
