@@ -2041,6 +2041,7 @@ var BP3D;
             };
             /** */
             FloorItem.prototype.isValidPosition = function (vec3) {
+                return true;
                 var corners = this.getCorners('x', 'z', vec3);
                 // check if we are in a room
                 var rooms = this.model.floorplan.getRooms();
